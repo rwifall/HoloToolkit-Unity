@@ -453,6 +453,10 @@ namespace HoloToolkit.Unity
             {
                 FocusedObject.SendMessage("OnSelect", SendMessageOptions.DontRequireReceiver);
             }
+            else
+            {
+                this.gameObject.SendMessage("OnUnfocusedSelect", SendMessageOptions.DontRequireReceiver);
+            }
         }
 
         /// <summary>
